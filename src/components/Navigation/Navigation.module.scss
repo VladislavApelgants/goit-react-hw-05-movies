@@ -1,0 +1,24 @@
+.navList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+}
+.navItem {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.navLink {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.navLinkActive {
+  color: sienna;
+}

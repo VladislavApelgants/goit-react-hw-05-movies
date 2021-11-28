@@ -1,0 +1,19 @@
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.movieList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.movieItem {
+  background-color: #c4c4c4;
+  flex-basis: calc((100% - 3 * 15px) / 3);
+  margin-top: 15px;
+  margin-left: 15px;
+}
