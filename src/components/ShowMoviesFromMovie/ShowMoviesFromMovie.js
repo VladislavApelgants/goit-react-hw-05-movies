@@ -1,8 +1,8 @@
 import { Link, useRouteMatch } from "react-router-dom";
 import { useLocation } from "react-router";
 import PropTypes from "prop-types";
-
 import s from "./ShowMoviesFromMovie.module.scss";
+
 export default function ShowMoviesFromMovie({ movies }) {
   const { url } = useRouteMatch();
   const location = useLocation();
