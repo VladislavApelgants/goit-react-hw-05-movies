@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
+import s from "./MovieReviews.module.scss";
 
 export default function MovieReviews({ reviews }) {
   return (
-    <ul>
+    <ul className={s.listReview}>
       {reviews.map((review) => {
         return (
           <li key={review.id}>

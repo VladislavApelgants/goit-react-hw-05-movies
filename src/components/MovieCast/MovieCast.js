@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import s from "./MovieCast.module.scss";
 
 export default function MovieCastDetails({ cast }) {
-  console.log(cast);
   return (
     <ul className={s.castList}>
       {cast.map((item) => {

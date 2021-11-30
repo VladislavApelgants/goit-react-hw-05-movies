@@ -24,7 +24,7 @@ export default function GetQueryValue({ onSubmit }) {
   }
 
   return (
-    <form onSubmit={HandleSubmit}>
+    <form onSubmit={HandleSubmit} className="search-form">
       <label>
         <span>Search movie</span>
         <input

@@ -7,13 +7,32 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: -15px;
-  margin-left: -15px;
+  margin-top: -25px;
+  margin-left: -25px;
 }
 
 .movieItem {
-  background-color: #c4c4c4;
-  flex-basis: calc((100% - 3 * 15px) / 3);
-  margin-top: 15px;
-  margin-left: 15px;
+  background-color: #f3d9b7d2;
+  flex-basis: calc((100% - 4 * 25px) / 4);
+  margin-top: 25px;
+  margin-left: 25px;
+  border: 1px solid #c4c4c4;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.linkCard {
+  text-decoration: none;
+  color: black;
+}
+
+.infoThumb {
+  padding: 15px 10px;
+}
+
+.titleCard {
+  font-size: 25px;
+  font-weight: 600;
 }

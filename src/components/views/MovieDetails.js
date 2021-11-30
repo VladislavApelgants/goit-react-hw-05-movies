@@ -8,7 +8,6 @@ export default function MovieDetails() {
   const location = useLocation();
   const { movieId } = useParams();
   const [movie, setMovie] = useState(null);
-
   function goBack() {
     history.push(location?.state?.from ?? "/");
   }
@@ -21,7 +20,7 @@ export default function MovieDetails() {
     <>
       {movie && (
         <>
-          <button type="button" onClick={goBack}>
+          <button type="button" className="btn__go-back" onClick={goBack}>
             go back
           </button>
           <div className="card-container">
@@ -37,12 +36,11 @@ export default function MovieDetails() {
             </div>
             <div>
               <h2>{movie.title}</h2>
-              <p>{movie.popularity}</p>
               <p>{movie.overview}</p>
             </div>
           </div>
 
-          <div>
+          <div className="container__additional-information">
             <h3>Additional information</h3>
             <MovieMoreInfo />
           </div>
